@@ -95,12 +95,16 @@ CASE tools support collaborative software development and maintenance, aiding al
 - **Import/Export Utility:** Compatible with external resources.
 - **Backup and Recovery:** Protects precious data.
 
+![case tools](images/case-tools.png)
+
 <!-- TOC --><a name="categories-of-case-tools"></a>
 ### Categories of CASE Tools
 
 - **Upper CASE Tools:** Focus on analysis and design phases, including tools for analysis modeling, reports, and forms generation.
 - **Lower CASE Tools:** Support system implementation, including tools for coding and configuration management.
 - **Integrated CASE Tools:** Link lower and upper CASE tools, creating a cohesive software development environment.
+
+![case tools app development](images/case-tools-app-development.png)
 
 <!-- TOC --><a name="need-for-case-tools"></a>
 ### Need for CASE Tools
