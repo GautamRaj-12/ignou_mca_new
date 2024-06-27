@@ -1,5 +1,30 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Data Science for Software Engineers](#data-science-for-software-engineers)
+  - [Introduction](#introduction)
+  - [Applications of Data Science](#applications-of-data-science)
+  - [Background of Data Science](#background-of-data-science)
+  - [Definition of Data Science](#definition-of-data-science)
+  - [Data Science Tools](#data-science-tools)
+  - [Data Science and Big Data](#data-science-and-big-data)
+  - [Phases Involved in Data Science Process](#phases-involved-in-data-science-process)
+  - [Data Science Methods](#data-science-methods)
+  - [Data Science Process for Predicting Product Purchase Probability Case Study](#data-science-process-for-predicting-product-purchase-probability-case-study)
+    - [1. Requirements Gathering Product Purchase Data](#1-requirements-gathering-product-purchase-data)
+    - [2. Data Cleansing Stage](#2-data-cleansing-stage)
+      - [Product Purchase Data Coded](#product-purchase-data-coded)
+    - [3. Data Exploration Stage](#3-data-exploration-stage)
+    - [4. Prediction Stage](#4-prediction-stage)
+    - [5. Data Visualisation Stage](#5-data-visualisation-stage)
+  - [Check Your Progress-1](#check-your-progress-1)
+  - [Check Your Progress-2](#check-your-progress-2)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="data-science-for-software-engineers"></a>
 # Data Science for Software Engineers
 
+<!-- TOC --><a name="introduction"></a>
 ## Introduction
 - Data-driven world with exponential data growth
   - Social media (tweets, Facebook posts, Instagram pictures, YouTube videos)
@@ -11,6 +36,7 @@
 - Data as a strategic asset for businesses
 - Data science for data-driven decision making
 
+<!-- TOC --><a name="applications-of-data-science"></a>
 ## Applications of Data Science
 - **Smart Recommendations**: Analyze historical data for recommendations
 - **Big Data Analytics**: Analyze sensor data, IoT data, social media data, log data
@@ -24,6 +50,7 @@
 - **Telecom**: Customer churn forecasting
 - Other applications: election campaigning, chatbots, virtual assistants, automated cars, disaster prediction, product pricing, preventive maintenance, customer retention, pattern recognition, online advertisement, demand forecasting, trend analysis, campaign effectiveness, recommendations
 
+<!-- TOC --><a name="background-of-data-science"></a>
 ## Background of Data Science
 - Data science related to statistics, uses statistical methods for data analysis
 - Term "Data Science" traced back to 1974 by Peter Naur, popularized by C.F. Jeff Wu in 1985
@@ -36,6 +63,7 @@
   - 2017: Bayesian network
   - 2019 onwards: Machine learning and deep learning
 
+<!-- TOC --><a name="definition-of-data-science"></a>
 ## Definition of Data Science
 - Interdisciplinary field dealing with collecting, analyzing, visualizing data using statistical and machine learning methods
 - Data scientist: make sense and actionable insights from raw data
@@ -43,6 +71,7 @@
 
 ![disciplines-of-data-science](images/data-science-applications.png)
 
+<!-- TOC --><a name="data-science-tools"></a>
 ## Data Science Tools
 - **AI and Machine Learning**: Deep learning, regression analysis, ML models, SVM, supervised and unsupervised learning, TensorFlow, Pytorch
 - **Big Data**: Apache Spark, Apache Hadoop, NoSQL databases (DynamoDB, MongoDB)
@@ -54,6 +83,7 @@
 - **Programming Languages**: R, Python, Scala, Julia, Java, C
 - **Model Development**: Matlab, Octave, MADLib
 
+<!-- TOC --><a name="data-science-and-big-data"></a>
 ## Data Science and Big Data
 - Big Data increases popularity of Data Science
 - Big Data challenges: volume, velocity, veracity, variety (structured, semi-structured, unstructured)
@@ -62,6 +92,7 @@
 - Data science development involves model building, exploration, fine-tuning for massive data sets
 - Big Data systems provide data management and processing technologies (Apache Hadoop, NoSQL databases)
 
+<!-- TOC --><a name="phases-involved-in-data-science-process"></a>
 ## Phases Involved in Data Science Process
 - **Requirements Gathering and Data Discovery**:
   - Understand business requirements, goals, challenges
@@ -87,6 +118,7 @@
   - Document findings, model behavior for test cases
   - Operationalize accepted model, use for business prediction, continuously fine-tune based on feedback
 
+<!-- TOC --><a name="data-science-methods"></a>
 ## Data Science Methods
 - **Clustering Method**:
   - Group objects into logical clusters based on attributes
@@ -110,8 +142,10 @@
   - Profiling: characterizing event, user, or object
   - Reduction: reduce large data set to represent key samples
 
+<!-- TOC --><a name="data-science-process-for-predicting-product-purchase-probability-case-study"></a>
 ## Data Science Process for Predicting Product Purchase Probability Case Study
 
+<!-- TOC --><a name="1-requirements-gathering-product-purchase-data"></a>
 ### 1. Requirements Gathering Product Purchase Data
 
 | Age_LT30 | Age_GT30 | In_LT50      | In_GT50 | Loyal_CT | onSale | Prod_buy |
@@ -138,10 +172,12 @@
 - onSale: Stands for product on sale. 1 indicates Yes and 0 indicates No.
 - Prod_buy: Stands for product buy. 1 indicates Yes and 0 indicates No.
 
+<!-- TOC --><a name="2-data-cleansing-stage"></a>
 ### 2. Data Cleansing Stage
 
 In this phase, we fix the data errors and condition the data so that it can be easily modeled using one of the existing models. The highlighted rows in the table need to be properly coded. For accurate model training, we need to use the correct code. Table 16.4 provides the correctly coded values.
 
+<!-- TOC --><a name="product-purchase-data-coded"></a>
 #### Product Purchase Data Coded
 
 | Age_LT30 | Age_GT30 | In_LT50 | In_GT50 | Loyal_CT | onSale | Prod_buy |
@@ -158,6 +194,7 @@ In this phase, we fix the data errors and condition the data so that it can be e
 | 1        | 0        | 1       | 0       | 1        | 1      | 0        |
 | 1        | 0        | 1       | 0       | 1        | 1      | 0        |
 
+<!-- TOC --><a name="3-data-exploration-stage"></a>
 ### 3. Data Exploration Stage
 
 In this stage, we identify the key features and their relation to the product purchase decision. We apply statistical methods to understand the data distribution and the feature relationship. We can infer the following based on our analysis:
@@ -168,15 +205,18 @@ In this stage, we identify the key features and their relation to the product pu
 
 We can use these features and insights for building and training models.
 
+<!-- TOC --><a name="4-prediction-stage"></a>
 ### 4. Prediction Stage
 
 - In this stage, we build and evaluate various models. We can evaluate various models such as linear regression, logistic regression, and others to understand their performance. We have selected the decision tree model as it factors in all the key features. We can visualize the combination and impact of various features with the decision tree model. 
 
 - We validate the decision tree model with the test data to ensure that the decision tree model does accurate predictions.
 
+<!-- TOC --><a name="5-data-visualisation-stage"></a>
 ### 5. Data Visualisation Stage
 ![decision-tree](images/decision-tree.png)
 
+<!-- TOC --><a name="check-your-progress-1"></a>
 ## Check Your Progress-1
 1. In ____ phase we do the data pre-processing. 
 2. The key features of the data set are extracted in _____ phase 
@@ -186,6 +226,7 @@ in ______ method
 and information 
 5. Understanding the association of products happens in _____
 
+<!-- TOC --><a name="check-your-progress-2"></a>
 ## Check Your Progress-2
 1. ______methods identify the relationship (as a function) between dependent 
 variables and independent variable. 
