@@ -1,5 +1,47 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [ADVANCED TOPICS IN SOFTWARE ENGINEERING](#advanced-topics-in-software-engineering)
+  - [INTRODUCTION](#introduction)
+  - [EVOLUTION OF FORMAL METHODS](#evolution-of-formal-methods)
+  - [USE OF MATHEMATICS IN SOFTWARE DEVELOPMENT](#use-of-mathematics-in-software-development)
+  - [FORMAL METHODS](#formal-methods)
+    - [WHAT CAN BE FORMALLY SPECIFIED?](#what-can-be-formally-specified)
+    - [GOALS OF FORMAL SPECIFICATION](#goals-of-formal-specification)
+    - [APPLICATION AREAS](#application-areas)
+    - [LIMITATIONS OF FORMAL SPECIFICATION USING FORMAL METHODS](#limitations-of-formal-specification-using-formal-methods)
+  - [Cleanroom Software Engineering](#cleanroom-software-engineering)
+    - [Key Attributes](#key-attributes)
+    - [Principles](#principles)
+    - [Comparison with Conventional Models](#comparison-with-conventional-models)
+    - [Example Projects](#example-projects)
+    - [Cleanroom Development Process](#cleanroom-development-process)
+    - [Limitations](#limitations)
+    - [Similarities and Differences with OO Paradigm](#similarities-and-differences-with-oo-paradigm)
+      - [Similarities](#similarities)
+      - [Differences](#differences)
+  - [Software Reuse and Its Types](#software-reuse-and-its-types)
+    - [Types of Software Reuse](#types-of-software-reuse)
+      - [Application System Reuse](#application-system-reuse)
+      - [Component Reuse](#component-reuse)
+      - [Function Reuse](#function-reuse)
+  - [Why Component-Based Software Engineering (CBSE)?](#why-component-based-software-engineering-cbse)
+  - [Software Component and Its Types](#software-component-and-its-types)
+  - [CBSE Process](#cbse-process)
+    - [Challenges for CBSE](#challenges-for-cbse)
+  - [Reengineering](#reengineering)
+    - [Objectives of Reengineering](#objectives-of-reengineering)
+    - [Software Reengineering Life Cycle](#software-reengineering-life-cycle)
+  - [Check Your Progress-1](#check-your-progress-1)
+  - [Check Your Progress-2](#check-your-progress-2)
+  - [Check Your Progress-3](#check-your-progress-3)
+  - [Check Your Progress-4](#check-your-progress-4)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="advanced-topics-in-software-engineering"></a>
 # ADVANCED TOPICS IN SOFTWARE ENGINEERING
 
+<!-- TOC --><a name="introduction"></a>
 ## INTRODUCTION
 - **Formality Spectrum**:
   - Conventional software engineering methods are categorized by their formality.
@@ -26,6 +68,7 @@
   - Software engineers are adopting systematic reuse for better quality, quicker, and lower-cost software.
   - Component-based software engineering is one model.
 
+<!-- TOC --><a name="evolution-of-formal-methods"></a>
 ## EVOLUTION OF FORMAL METHODS
 - **1970s Structured Programming Revolution**:
   - Better programs result from following certain precepts in program design.
@@ -43,6 +86,7 @@
   - Formal methods add precision, aid understanding, and reason about design properties.
   - Existing applications: probability theory in performance modeling, context-free grammars in compiler design, relational calculus in database theory.
 
+<!-- TOC --><a name="use-of-mathematics-in-software-development"></a>
 ## USE OF MATHEMATICS IN SOFTWARE DEVELOPMENT
 - **Mathematics Supports Abstraction**:
   - Exact mathematical specifications are unambiguous.
@@ -55,6 +99,7 @@
 - **Key Mathematical Topics**:
   - Formal logic (propositional and predicate calculus), set theory, formal languages, automata (finite state machines).
 
+<!-- TOC --><a name="formal-methods"></a>
 ## FORMAL METHODS
 - **Definition**:
   - Provides a formal language for describing software artifacts (e.g., specifications, designs, source code).
@@ -79,6 +124,7 @@
   - Larch
   - Formal Development Methodology (FDM)
 
+<!-- TOC --><a name="what-can-be-formally-specified"></a>
 ### WHAT CAN BE FORMALLY SPECIFIED?
 - **Graphical Languages**:
   - Data Flow Diagrams (DFDs) and Petri nets.
@@ -87,6 +133,7 @@
   - Specifications describe what a system should do.
   - Designs and source code provide more detailed models.
 
+<!-- TOC --><a name="goals-of-formal-specification"></a>
 ### GOALS OF FORMAL SPECIFICATION
 - **Removal of Ambiguity**:
   - Formal syntax eliminates ambiguity.
@@ -98,6 +145,7 @@
 - **Completeness**:
   - Difficult to achieve, some aspects may be left undefined.
 
+<!-- TOC --><a name="application-areas"></a>
 ### APPLICATION AREAS
 - **Areas of Use**:
   - Safety-critical systems
@@ -108,6 +156,7 @@
   - Transaction processing systems
   - Complex or critical systems
 
+<!-- TOC --><a name="limitations-of-formal-specification-using-formal-methods"></a>
 ### LIMITATIONS OF FORMAL SPECIFICATION USING FORMAL METHODS
 - **Problems**:
   - Focus on function and data, difficult to represent timing, control, and behavioral aspects.
@@ -124,10 +173,12 @@
   - Aircraft avionics, medical devices.
   - Less applicable in business environments.
 
+<!-- TOC --><a name="cleanroom-software-engineering"></a>
 ## Cleanroom Software Engineering
 
 Cleanroom software engineering is an engineering and managerial process for developing high-quality software with certified reliability. It was originally developed by Dr. Harlan Mills. The term “Cleanroom” reflects the emphasis on defect prevention and certification of reliability for the intended environment.
 
+<!-- TOC --><a name="key-attributes"></a>
 ### Key Attributes
 - **Correct by mathematically sound design**
 - **Certified by statistically valid testing**
@@ -135,6 +186,7 @@ Cleanroom software engineering is an engineering and managerial process for deve
 - **Well-documented**
 - **Early error detection**, reducing development costs and failure incidence
 
+<!-- TOC --><a name="principles"></a>
 ### Principles
 1. **Incremental development under Statistical Quality Control (SQC)**
    - Each increment is a complete iteration.
@@ -152,6 +204,7 @@ Cleanroom software engineering is an engineering and managerial process for deve
    - Performance of a subset is used to draw conclusions about general performance.
    - Statistically valid statements about reliability and confidence can be made.
 
+<!-- TOC --><a name="comparison-with-conventional-models"></a>
 ### Comparison with Conventional Models
 - **Team Size**: Small teams of 6-8 qualified professionals.
 - **Time Allocation**: More time spent in the design phase.
@@ -159,12 +212,14 @@ Cleanroom software engineering is an engineering and managerial process for deve
 
 ![cleanroom](images/cleanroom-se.png)
 
+<!-- TOC --><a name="example-projects"></a>
 ### Example Projects
 - IBM COBOL/SF product
 - Ericsson OS-32 operating system project
 - USAF Space Command and Control Architectural Infrastructure (SCAI)
 - US Army Cleanroom project at the Picatinny Arsenal
 
+<!-- TOC --><a name="cleanroom-development-process"></a>
 ### Cleanroom Development Process
 1. **Increment Planning**: Project plan is built around incremental strategy.
 2. **Requirements Gathering**: Elicit and refine customer requirements for each increment.
@@ -175,41 +230,51 @@ Cleanroom software engineering is an engineering and managerial process for deve
 7. **Statistical Use Testing**: Use a statistical sample of test cases.
 8. **Certification**: Once verification and testing are complete, the increment is certified.
 
+<!-- TOC --><a name="limitations"></a>
 ### Limitations
 - Perceived as too theoretical and mathematical for real development.
 - Relies on correctness verification and statistical quality control instead of unit testing.
 - Rigorous processes required, making it challenging for organizations at an ad hoc level of the Capability Maturity Model.
 
+<!-- TOC --><a name="similarities-and-differences-with-oo-paradigm"></a>
 ### Similarities and Differences with OO Paradigm
+<!-- TOC --><a name="similarities"></a>
 #### Similarities
 - Both rely on incremental development.
 - Cleanroom usage model is similar to OO use cases.
 - State box in Cleanroom is similar to OO transition diagram.
 - Both emphasize reuse.
 
+<!-- TOC --><a name="differences"></a>
 #### Differences
 - Cleanroom relies on decomposition; OO relies on composition.
 - Cleanroom uses formal methods; OO allows informal use case definition and testing.
 - OO inheritance hierarchy is a design resource; Cleanroom usage hierarchy is the system itself.
 
+<!-- TOC --><a name="software-reuse-and-its-types"></a>
 ## Software Reuse and Its Types
 
 To adopt systematic reuse as a design process, it's essential to understand the different types of software reuse. Here are the main categories:
 
+<!-- TOC --><a name="types-of-software-reuse"></a>
 ### Types of Software Reuse
 
+<!-- TOC --><a name="application-system-reuse"></a>
 #### Application System Reuse
 - **Commercial Off-The-Shelf (COTS) Reuse:** Incorporating one application inside another by reusing an entire application.
 - **Development of Application Families:** Creating families of applications, like MS Office, where various applications share common features and code.
 
+<!-- TOC --><a name="component-reuse"></a>
 #### Component Reuse
 - **Component-Based Software Engineering (CBSE):**
   - **Example Analogy:** Imagine you have purchased a Television. Each component is designed to fit a specific architectural style with standardized connections and a pre-established communication protocol. Assembly is straightforward because you don’t need to build the system from scratch. Similarly, CBSE aims to achieve this in software engineering. Pre-built, standardized software components are available to fit a specific architectural style for some application domains. The application is then assembled using these components rather than conventional programming language "discrete parts."
 
+<!-- TOC --><a name="function-reuse"></a>
 #### Function Reuse
 - **Subsystems or Single Objects:** Reusing components of one application in another.
 - **Single Well-Defined Function Components:** Reusing software components that implement a single well-defined function.
 
+<!-- TOC --><a name="why-component-based-software-engineering-cbse"></a>
 ## Why Component-Based Software Engineering (CBSE)?
 
 The goal of CBSE is to increase productivity and quality while decreasing time-to-market in software development. This approach involves:
@@ -218,6 +283,7 @@ The goal of CBSE is to increase productivity and quality while decreasing time-t
 - Applying software engineering principles similar to Object-Oriented Programming (OOP) but to the whole process of designing and constructing software systems.
 - Focusing on reusing and adapting existing components.
 
+<!-- TOC --><a name="software-component-and-its-types"></a>
 ## Software Component and Its Types
 
 A software component is a nontrivial, independent, and replaceable part of a system that fulfills a clear function in the context of a well-defined architecture. Components can be characterized based on their use in the CBSE process:
@@ -228,6 +294,7 @@ A software component is a nontrivial, independent, and replaceable part of a sys
 - **Assembled Components**
 - **Updated Components**
 
+<!-- TOC --><a name="cbse-process"></a>
 ## CBSE Process
 
 The CBSE process is similar to conventional or object-oriented software engineering but focuses on component reuse:
@@ -241,6 +308,7 @@ The CBSE process is similar to conventional or object-oriented software engineer
      - **Black Box Wrapping:** Pre/post-processing at the interface level when source code is unavailable.
    - **Composition:** Integrating qualified, adapted, or engineered components into a working system using an established infrastructure.
 
+<!-- TOC --><a name="challenges-for-cbse"></a>
 ### Challenges for CBSE
 
 CBSE faces various challenges, including:
@@ -254,6 +322,7 @@ CBSE faces various challenges, including:
 - Developing comprehensive development models.
 - Handling complex component configurations.
 
+<!-- TOC --><a name="reengineering"></a>
 ## Reengineering
 
 Reengineering is crucial for adapting legacy systems to new requirements and technologies. The process involves:
@@ -261,6 +330,7 @@ Reengineering is crucial for adapting legacy systems to new requirements and tec
 1. **Reverse Engineering:** Extracting design and requirements from existing system code.
 2. **Forward Engineering:** Developing the replacement system based on the extracted information.
 
+<!-- TOC --><a name="objectives-of-reengineering"></a>
 ### Objectives of Reengineering
 
 - **Improve Quality:** Enhance software reliability, maintainability, and documentation.
@@ -268,6 +338,7 @@ Reengineering is crucial for adapting legacy systems to new requirements and tec
 
 ![software-reengineering](images/software-reengineering.png)
 
+<!-- TOC --><a name="software-reengineering-life-cycle"></a>
 ### Software Reengineering Life Cycle
 
 The life cycle involves several phases:
@@ -279,20 +350,24 @@ The life cycle involves several phases:
 5. **Transformation Phase:** Physically transforming software structures according to remediation strategies.
 6. **Evaluation Phase:** Assessing the new system and establishing its compliance with quality requirements.
 
+<!-- TOC --><a name="check-your-progress-1"></a>
 ## Check Your Progress-1
 1. What are Formal methods?
 2. What are the main parts of the Formal methods?
 
+<!-- TOC --><a name="check-your-progress-2"></a>
 ## Check Your Progress-2
 1. What is Cleanroom Engineering and what are its objectives?
 2. What is Statistical Process Control?
 3. What are the benefits of Cleanroom software engineering?
 4. What are the limitations of Cleanroom software engineering?
 
+<!-- TOC --><a name="check-your-progress-3"></a>
 ## Check Your Progress-3
 1. What are the benefits of reuse of software?
 2. What is Commercial off the Shelf Software (COTS)?
 
+<!-- TOC --><a name="check-your-progress-4"></a>
 ## Check Your Progress-4
 1. What is Software Reengineering and what are its objectives?
 2. What is Reverse Engineering?
