@@ -1,11 +1,28 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Accounting and its Functions](#accounting-and-its-functions)
+  - [Introduction](#introduction)
+  - [The Scope of Accounting](#the-scope-of-accounting)
+  - [The Emerging Role of Accounting](#the-emerging-role-of-accounting)
+  - [Accounting as an Information System](#accounting-as-an-information-system)
+    - [Information Needs of Various Users](#information-needs-of-various-users)
+  - [The Role and Activities of an Accountant](#the-role-and-activities-of-an-accountant)
+  - [Accounting Personnel](#accounting-personnel)
+  - [Organization for Accounting and Finance](#organization-for-accounting-and-finance)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="accounting-and-its-functions"></a>
 # Accounting and its Functions
 
+<!-- TOC --><a name="introduction"></a>
 ## Introduction
 
 - **Accounting**: Called the language of business, it communicates the results of business operations and its various aspects.
 - **Common Definition**: "Accounting is the art of recording, classifying, and summarizing in a significant manner and in terms of money, transactions, and events which are, in part at least, of financial character and interpreting the results thereof."
 - **Broad Definition**: "Accounting is the process of identifying, measuring, and communicating economic information to permit informed judgments and decisions by the users of information."
 
+<!-- TOC --><a name="the-scope-of-accounting"></a>
 ## The Scope of Accounting
 
 - **Data Creation and Collection**:
@@ -27,6 +44,7 @@
 
   ![scope-of-accounting](images/scope-of-accounting.png)
 
+<!-- TOC --><a name="the-emerging-role-of-accounting"></a>
 ## The Emerging Role of Accounting
 
 - **Forensic Accounting**:
@@ -73,6 +91,7 @@
   - Adjusts the value of assets and profit according to changes in price levels.
   - Aims to correct distortions caused by price level changes.
 
+<!-- TOC --><a name="accounting-as-an-information-system"></a>
 ## Accounting as an Information System
 
 - **Series of Activities**: 
@@ -100,6 +119,7 @@
   - Community (economic and social interests)
   - Government
 
+<!-- TOC --><a name="information-needs-of-various-users"></a>
 ### Information Needs of Various Users
 
 - **Shareholders and Investors**:
@@ -132,6 +152,7 @@
   - Profit and output levels
   - Social responsibility and growth plans
 
+<!-- TOC --><a name="the-role-and-activities-of-an-accountant"></a>
 ## The Role and Activities of an Accountant
 
 - **Accountant Definitions**:
@@ -152,6 +173,7 @@
   - Conscience Keeper: Protecting employer's interests ethically
   - Information Manager: Managing internal and external information
 
+<!-- TOC --><a name="accounting-personnel"></a>
 ## Accounting Personnel
 
 - **Public Practice**:
@@ -178,6 +200,7 @@
   - Investment decision, financing decision, dividend decision, working capital decision
   - Balance between liquidity and shareholder returns
 
+<!-- TOC --><a name="organization-for-accounting-and-finance"></a>
 ## Organization for Accounting and Finance
 
 - **Typical Structure**:
