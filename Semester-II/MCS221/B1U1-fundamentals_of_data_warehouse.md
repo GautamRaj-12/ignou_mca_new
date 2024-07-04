@@ -1,5 +1,42 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Fundamentals of Data Warehouse](#fundamentals-of-data-warehouse)
+  - [Introduction](#introduction)
+  - [Evolution of Data Warehouse](#evolution-of-data-warehouse)
+    - [Key Definitions:](#key-definitions)
+  - [Data Warehousing and its need](#data-warehousing-and-its-need)
+    - [Need for Data Warehouse](#need-for-data-warehouse)
+    - [Benefits of Data Warehouse](#benefits-of-data-warehouse)
+  - [Data Warehouse Design Approaches](#data-warehouse-design-approaches)
+    - [Importance](#importance)
+    - [Main Approaches](#main-approaches)
+    - [1. Top-Down Approach](#1-top-down-approach)
+    - [Steps:](#steps)
+    - [2. Bottom-Up Approach](#2-bottom-up-approach)
+    - [Steps:](#steps-1)
+  - [Characteristics of a Data Warehouse](#characteristics-of-a-data-warehouse)
+  - [How Data Warehouse Works](#how-data-warehouse-works)
+    - [Components](#components)
+  - [OLTP and OLAP](#oltp-and-olap)
+    - [Overview](#overview)
+    - [Online Transaction Processing (OLTP)](#online-transaction-processing-oltp)
+    - [Online Analytical Processing (OLAP)](#online-analytical-processing-olap)
+    - [Key Differences](#key-differences)
+  - [Data Warehouse Fundamentals and Architecture](#data-warehouse-fundamentals-and-architecture)
+    - [Data Granularity](#data-granularity)
+    - [Metadata and Data Warehousing](#metadata-and-data-warehousing)
+  - [Data Warehousing Applications](#data-warehousing-applications)
+  - [Types of Data Warehouses](#types-of-data-warehouses)
+  - [Popular Data Warehouse Platforms](#popular-data-warehouse-platforms)
+  - [Check Your Progress-1](#check-your-progress-1)
+  - [Check Your Progress-2](#check-your-progress-2)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="fundamentals-of-data-warehouse"></a>
 # Fundamentals of Data Warehouse
 
+<!-- TOC --><a name="introduction"></a>
 ## Introduction
 
 - A database often contains information or data collection stored electronically.
@@ -13,6 +50,7 @@
 - Customized hardware for data warehouses became available in the late 1990s.
 - Well-architected data warehouses provide actionable insights for business decisions.
 
+<!-- TOC --><a name="evolution-of-data-warehouse"></a>
 ## Evolution of Data Warehouse
 
 - **1980s**: Relational database revolution improved access to valuable information.
@@ -27,10 +65,12 @@
   - Bottom-up approach, data marts integrated via Information Bus architecture.
   - Star-schema modeling for easier end-user understanding.
 
+<!-- TOC --><a name="key-definitions"></a>
 ### Key Definitions:
 - **Inmon's Definition**: "A warehouse is a subject-oriented, integrated, time-variant and non-volatile collection of data in support of management’s decision-making process."
 - **Kimball's Definition**: "Data Warehouse (DW) is the conglomerate of all data marts within the enterprise. Information is always stored in the dimensional model."
 
+<!-- TOC --><a name="data-warehousing-and-its-need"></a>
 ## Data Warehousing and its need
 
 - **Purpose**: Collect and manage data from various sources to provide meaningful business insights.
@@ -42,6 +82,7 @@
   - Ensures consistent information across the organization.
   - Offers a flexible and interactive information source.
 
+<!-- TOC --><a name="need-for-data-warehouse"></a>
 ### Need for Data Warehouse
 
 - Enhances turnaround time for analysis and reporting.
@@ -50,6 +91,7 @@
 - Standardizes data from heterogeneous sources for easier readability and accessibility.
 - Provides a high ROI by enabling quick and informed decision-making.
 
+<!-- TOC --><a name="benefits-of-data-warehouse"></a>
 ### Benefits of Data Warehouse
 
 - **Scalability**: Easy to scale to match the increase in data volume.
@@ -60,22 +102,27 @@
 - **Increased Revenue and Returns**: Access to data analytics strengthens business decisions.
 - **Faster and Accurate Data Analytics**: Centralized data allows for quicker and more accurate analysis.
 
+<!-- TOC --><a name="data-warehouse-design-approaches"></a>
 ## Data Warehouse Design Approaches
 
+<!-- TOC --><a name="importance"></a>
 ### Importance
 - Selection of the right data warehouse design is crucial.
 - It can save significant time and project costs.
 
+<!-- TOC --><a name="main-approaches"></a>
 ### Main Approaches
 There are two primary design approaches for data warehouses:
 1. **Top-Down Approach (Bill Inmon)**
 2. **Bottom-Up Approach (Ralph Kimball)**
 
+<!-- TOC --><a name="1-top-down-approach"></a>
 ### 1. Top-Down Approach
 Bill Inmon’s methodology:
 - **Data Warehouse First**: The data warehouse is designed first.
 - **Data Marts**: Built on top of the data warehouse.
 
+<!-- TOC --><a name="steps"></a>
 ### Steps:
 1. **Extract Data to Stage**:
    - Data is extracted from various source systems.
@@ -89,11 +136,13 @@ Bill Inmon’s methodology:
 
   ![top down approach](images/top-down-approach.png)
 
+<!-- TOC --><a name="2-bottom-up-approach"></a>
 ### 2. Bottom-Up Approach
 Ralph Kimball’s methodology:
 - **Dimensional Modelling**: Known as the Kimball methodology.
 - **Data Marts First**: Created for specific business processes, then integrated into an enterprise data warehouse (EDW).
 
+<!-- TOC --><a name="steps-1"></a>
 ### Steps:
 1. **Data Marts Creation**:
    - Data is extracted from source systems into the staging area.
@@ -107,6 +156,7 @@ Ralph Kimball’s methodology:
 
   ![bottom up approach](images/bottom-up-approach.png)
 
+<!-- TOC --><a name="characteristics-of-a-data-warehouse"></a>
 ## Characteristics of a Data Warehouse
 
 1. **Subject-Oriented**:
@@ -135,12 +185,14 @@ Ralph Kimball’s methodology:
 
   ![non volatile](images/non-volatile.png)
 
+<!-- TOC --><a name="how-data-warehouse-works"></a>
 ## How Data Warehouse Works
 
 - **Central Repository**: Collects data from multiple sources (structured, semi-structured, unstructured).
 - **Integration**: Disparate sources are integrated for comprehensive use.
 - **Data Mining**: Finds patterns to increase profits.
 
+<!-- TOC --><a name="components"></a>
 ### Components
 
 1. **Load Manager**:
@@ -161,18 +213,22 @@ Ralph Kimball’s methodology:
 
 ![how data warehouse works](images/how-data-warehouse-works.png)
 
+<!-- TOC --><a name="oltp-and-olap"></a>
 ## OLTP and OLAP
 
+<!-- TOC --><a name="overview"></a>
 ### Overview
 - **OLTP (Online Transaction Processing)**: Captures, stores, and processes real-time transactional data.
 - **OLAP (Online Analytical Processing)**: Analyzes aggregated historical data from OLTP systems using complex queries.
 
+<!-- TOC --><a name="online-transaction-processing-oltp"></a>
 ### Online Transaction Processing (OLTP)
 - **Function**: Captures and maintains transaction data in a database.
 - **Examples**: Banking activities, credit card transactions, retail checkout.
 - **Emphasis**: Fast processing with frequent reads, writes, and updates.
 - **Data Integrity**: Built-in system logic ensures data integrity during transaction failures.
 
+<!-- TOC --><a name="online-analytical-processing-olap"></a>
 ### Online Analytical Processing (OLAP)
 - **Function**: Applies complex queries to large amounts of historical data.
 - **Sources**: Data aggregated from OLTP databases and other sources.
@@ -181,6 +237,7 @@ Ralph Kimball’s methodology:
 - **Examples**: Year-over-year financial performance, marketing trends.
 - **Impact of Query Failure**: Does not interrupt customer transactions but can affect business intelligence accuracy.
 
+<!-- TOC --><a name="key-differences"></a>
 ### Key Differences
 
 | **Characteristics**        | **OLTP**                                                | **OLAP**                                          |
@@ -200,8 +257,10 @@ Ralph Kimball’s methodology:
 | **User Examples**          | Customer-facing personnel, clerks, online shoppers     | Data analysts, business analysts, executives      |
 | **Database Design**        | Normalized databases for efficiency                    | Denormalized databases for analysis               |
 
+<!-- TOC --><a name="data-warehouse-fundamentals-and-architecture"></a>
 ## Data Warehouse Fundamentals and Architecture
 
+<!-- TOC --><a name="data-granularity"></a>
 ### Data Granularity
 - **Granularity**: Refers to the level of detail in data.
   - **Fine Granularity**: Greater detail, less summary.
@@ -217,6 +276,7 @@ Ralph Kimball’s methodology:
 - **Granularity Levels**: Depend on processing and performance requirements.
   - Example: Yearly, monthly, daily, hourly, minute, second.
 
+<!-- TOC --><a name="metadata-and-data-warehousing"></a>
 ### Metadata and Data Warehousing
 - **Common Schema**: Data stored using a controlled schema.
 - **Data Dictionary**: Stores metadata such as:
@@ -237,6 +297,7 @@ Ralph Kimball’s methodology:
   - Ensures calculation accuracy
   - Aligns with business terms
 
+<!-- TOC --><a name="data-warehousing-applications"></a>
 ## Data Warehousing Applications
 - **Investment and Insurance**: Analyzes customer and market trends.
 - **Healthcare**: Forecasts treatment outcomes and shares data with units like research labs and medical units.
@@ -247,6 +308,7 @@ Ralph Kimball’s methodology:
 - **Airlines**: Supports operations like crew assignments and flight analysis.
 - **Public Sector**: Manages data and records for government agencies.
 
+<!-- TOC --><a name="types-of-data-warehouses"></a>
 ## Types of Data Warehouses
 - **Enterprise Data Warehouse**:
   - Central repository for decision support.
@@ -261,6 +323,7 @@ Ralph Kimball’s methodology:
   - Supports specific regions, business units, or functions.
   - Enhances user responses and reduces data volume for analysis.
 
+<!-- TOC --><a name="popular-data-warehouse-platforms"></a>
 ## Popular Data Warehouse Platforms
 - **Google BigQuery**:
   - Cost-effective with built-in machine learning.
@@ -280,10 +343,12 @@ Ralph Kimball’s methodology:
   - Integrates data warehousing and analytics with a unified experience.
 
 
+<!-- TOC --><a name="check-your-progress-1"></a>
 ## Check Your Progress-1
 1. What is a Data Warehouse and why is it important?
 2. Mention the characteristics of a Data Warehouse.
    
+<!-- TOC --><a name="check-your-progress-2"></a>
 ## Check Your Progress-2
 1. Why a data warehouse is separated from Operational Databases?
 2. Mention the key differences between a database and a data warehouse.
