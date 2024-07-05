@@ -1,3 +1,18 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Data Mining Tools](#data-mining-tools)
+  - [Popular Data Mining Tools](#popular-data-mining-tools)
+- [Applications of Data Mining](#applications-of-data-mining)
+- [Issues in Data Mining](#issues-in-data-mining)
+  - [Mining Methodology and User Interaction](#mining-methodology-and-user-interaction)
+  - [Performance Issues](#performance-issues)
+  - [Diverse Data Types Issues](#diverse-data-types-issues)
+  - [Check Your Progress-1](#check-your-progress-1)
+  - [Check Your Progress-2](#check-your-progress-2)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="data-mining-and-its-benefits"></a>
 ## Data Mining and Its Benefits
 
 **Data mining**, also known as knowledge discovery in data (KDD), is the process of uncovering patterns and valuable information from large data sets. 
@@ -31,6 +46,7 @@ Data mining analyzes data and converts it into meaningful information, helping b
 - Initiates automated predictions of behaviors and trends
 - Discovers hidden patterns
 
+<!-- TOC --><a name="types-of-data-that-can-be-mined"></a>
 ## Types of Data that can be Mined
 
 Data mining is applicable to various types of media and data repositories. Algorithms and approaches may differ based on data type.
@@ -44,6 +60,7 @@ Data mining is applicable to various types of media and data repositories. Algor
 - Advanced databases (e.g., spatial, multimedia, time-series, textual databases)
 - Flat files
 
+<!-- TOC --><a name="how-data-mining-works"></a>
 ## How Data Mining Works
 
 **Cross-Industry Standard Process for Data Mining (CRISP-DM)** is a methodology guiding data mining efforts. It includes descriptions of typical project phases, tasks involved, and task relationships. The CRISP-DM model is flexible and customizable.
@@ -72,6 +89,7 @@ Data mining is applicable to various types of media and data repositories. Algor
 6. **Deployment**
    - Implement models via visual presentations, reports, or actionable strategies (e.g., new sales strategies, risk-reduction measures).
 
+<!-- TOC --><a name="classification-of-data-mining-systems"></a>
 ## Classification of Data Mining Systems
 
 Data mining systems can be categorized based on various criteria:
@@ -82,6 +100,7 @@ Data mining systems can be categorized based on various criteria:
 - **Mining Techniques Used**: Machine learning, neural networks, genetic algorithms, statistics, visualization, etc.
 - **User Interaction**: Query-driven, interactive exploratory, or autonomous systems.
 
+<!-- TOC --><a name="data-mining-techniques"></a>
 ## Data Mining Techniques
 
 Data mining is used to identify patterns and derive business insights. Common techniques include:
@@ -101,6 +120,7 @@ Data mining is used to identify patterns and derive business insights. Common te
 5. **Regression Analysis**
    - Understand important factors and their interactions within a dataset (e.g., predicting sales based on weather forecasts).
 
+<!-- TOC --><a name="data-mining-vs-data-warehousing"></a>
 ## Data Mining vs Data Warehousing
 
 | **Attribute** | **Data Mining** | **Data Warehouse** |
@@ -120,10 +140,12 @@ Data mining is used to identify patterns and derive business insights. Common te
 | **Error Identification** | Identifies errors that can lead to losses. | Allows access to critical data from multiple sources in one place, saving retrieval time. |
 | **Actionable Strategies** | Helps generate actionable strategies built on data insights. | Once data is input, it's easy to retrieve and unlikely to be lost. |
 
+<!-- TOC --><a name="data-mining-tools"></a>
 # Data Mining Tools
 
 Data mining techniques utilize domain knowledge from statistical analysis, artificial intelligence, and database systems to analyze data in different dimensions and perspectives. They discover patterns or trends from large data sets and transform data into useful information for decision-making.
 
+<!-- TOC --><a name="popular-data-mining-tools"></a>
 ## Popular Data Mining Tools
 - **Orange**
   - Developed at the bioinformatics lab, Ljubljana University, Slovenia.
@@ -165,6 +187,7 @@ Data mining techniques utilize domain knowledge from statistical analysis, artif
   - Creates high-quality vector-graphics images.
   - Faster than standard Python implemented in C.
 
+<!-- TOC --><a name="applications-of-data-mining"></a>
 # Applications of Data Mining
 
 Data mining is primarily used by companies in retail, finance, communication, and marketing to analyze transactional data and determine pricing, customer preferences, product positioning, impact on sales, customer satisfaction, and profits.
@@ -216,10 +239,12 @@ Data mining is primarily used by companies in retail, finance, communication, an
   - Reduces costs across operational functions.
   - Identifies bottlenecks and improves decision-making.
 
+<!-- TOC --><a name="issues-in-data-mining"></a>
 # Issues in Data Mining
 
 Data mining involves complex algorithms and data integration from various sources. Major issues include:
 
+<!-- TOC --><a name="mining-methodology-and-user-interaction"></a>
 ## Mining Methodology and User Interaction
 - **Mining different kinds of knowledge**
   - Different users require different kinds of knowledge.
@@ -236,20 +261,24 @@ Data mining involves complex algorithms and data integration from various source
 - **Pattern evaluation**
   - Patterns should be interesting, representing common knowledge or novelty.
 
+<!-- TOC --><a name="performance-issues"></a>
 ## Performance Issues
 - **Efficiency and scalability**
   - Algorithms must be efficient and scalable for large databases.
 - **Parallel, distributed, and incremental mining**
   - Algorithms should handle huge databases and distribute data for parallel processing.
 
+<!-- TOC --><a name="diverse-data-types-issues"></a>
 ## Diverse Data Types Issues
 - **Handling complex data types**
   - Systems must manage complex data objects like multimedia, spatial, and temporal data.
 - **Mining from heterogeneous databases**
   - Challenges arise from structured, semi-structured, and unstructured data sources.
 
+<!-- TOC --><a name="check-your-progress-1"></a>
 ## Check Your Progress-1
 1. What are the descriptive and predictive data mining techniques? Explain.
 
+<!-- TOC --><a name="check-your-progress-2"></a>
 ## Check Your Progress-2
 1. Identify and describe the features of some more open source / free data mining tools which were not discussed in this course content.
